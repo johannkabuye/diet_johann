@@ -1,0 +1,14 @@
+# Molipe GitHub config (contains credentials!)
+github_config
+
+# Backup files
+*.bak
+*~
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
