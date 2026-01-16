@@ -46,7 +46,7 @@
 #X obj 450 47 mono-rhythm 1;
 #X obj 227 47 mono-rhythm 2;
 #X obj 5 373 mute-group 1;
-#X obj 7 425 repeater-group 1;
+#X obj 4 427 repeater-group 1;
 #X obj 5 47 mono-rhythm 3;
 #X obj 672 48 mono-rhythm 4;
 #X obj 2 547 basic-lfo 1;
@@ -116,7 +116,7 @@
 #X connect 5 0 1 0;
 #X coords 0 -1 1 1 1780 40 2 100 100;
 #X restore 4 3 pd do-not-delete;
-#X obj 115 424 s global-sidechain;
+#X obj 75 379 s global-sidechain;
 #X obj 1115 851 diet-looper 2;
 #X obj 1116 1147 diet-looper 3;
 #X connect 6 0 47 0;
@@ -130,13 +130,15 @@
 #X connect 18 0 10 0;
 #X connect 18 1 5 0;
 #X connect 21 0 23 2;
+#X connect 21 1 24 5;
 #X connect 22 0 23 1;
+#X connect 22 1 24 3;
 #X connect 23 0 24 0;
-#X connect 23 1 24 1;
-#X connect 23 2 24 2;
-#X connect 23 3 24 3;
-#X connect 23 4 24 4;
-#X connect 23 5 24 5;
+#X connect 23 1 24 2;
+#X connect 23 2 24 4;
+#X connect 23 3 24 6;
+#X connect 23 4 24 8;
+#X connect 23 5 24 9;
 #X connect 24 0 39 0;
 #X connect 24 1 9 0;
 #X connect 24 2 13 0;
@@ -147,7 +149,9 @@
 #X connect 24 5 57 0;
 #X connect 25 0 23 0;
 #X connect 25 0 55 0;
+#X connect 25 1 24 1;
 #X connect 26 0 23 3;
+#X connect 26 1 24 7;
 #X connect 27 0 39 1;
 #X connect 27 0 42 1;
 #X connect 28 0 39 2;
